@@ -65,7 +65,7 @@ if __name__ == "__main__":
     if path_to_first == []:
         raise Exception(f'node {first} not found')
     path_to_second = path_to_node(root, second)
-    if path_to_first == []:
+    if path_to_second == []:
         raise Exception(f'node {second} not found')
 
     common_parent = get_common_parent(path_to_first, path_to_second)
